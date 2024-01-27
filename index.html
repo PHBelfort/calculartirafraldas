@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULE O VALOR DAS TIRAS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+
+<div class="container">
+    <h2>CALCULE O VALOR DAS TIRAS</h2>
+    <br>
+        <label for="a">VALOR DA OFERTA</label>
+        <input type="number" id="a" step="any" placeholder="Insira o valor da oferta">
+
+    <div id="tiraExport">
+        <div class="size-input">
+            <label for="b">P</label>
+            <input type="number" id="b" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoB"></span>
+        </div>
+
+        <div class="size-input">
+            <label for="c">M</label>
+            <input type="number" id="c" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoC"></span>
+        </div>
+
+        <div class="size-input">
+            <label for="d">G</label>
+            <input type="number" id="d" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoD"></span>
+        </div>
+
+        <div class="size-input">
+            <label for="e">XG</label>
+            <input type="number" id="e" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoE"></span>
+        </div>
+
+        <div class="size-input">
+            <label for="f">XXG</label>
+            <input type="number" id="f" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoF"></span>
+        </div>
+
+        <div class="size-input">
+            <label for="g">RN+</label>
+            <input type="number" id="g" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoG"></span>
+        </div>
+
+        <div class="size-input">
+            <label for="pm">P/M</label>
+            <input type="number" id="pm" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoPM"></span>
+        </div>
+
+        <div class="size-input">
+            <label for="ggx">G/XG</label>
+            <input type="number" id="ggx" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoGGX"></span>
+        </div>
+
+        <div class="size-input">
+            <label for="geg">G/EG</label>
+            <input type="number" id="geg" step="any" placeholder="Qdt">
+            <span class="resultado" id="resultadoGEG"></span>
+        </div>
+
+        <br><br>
+    </div>
+
+        <br><br>
+
+        <button class="button-group" onclick="calcularDivisao()">CALCULAR</button>
+        <button class="button-group" onclick="limparCampos()">LIMPAR</button>
+        <button class="button-group" onclick="manterValores(); imprimirConteudo()">GERAR PDF</button>
+
+        <br><br><br><br>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
